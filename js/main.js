@@ -20,7 +20,7 @@ document.querySelector('.bg-modal').style.display = 'none';
     function(){
     
         document.querySelector('.bg-modal2').style.display = 'flex';
-       $(".bg-modal2").css("overflow-y","scroll");
+       
        
  // $('.bg-modal').fadeIn();
 
