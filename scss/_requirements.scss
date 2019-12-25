@@ -1,0 +1,40 @@
+.section-requirements-text
+{
+	width: 240px;
+	padding-top:30px;
+	color: #2a6b16;
+	font-weight: bold;
+}
+.section-requirements-item
+{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	padding-top:30px;
+}
+.requirements-h2
+{
+	color: #2a6b16;
+    font-weight: 600;
+    font-size: 31px;
+    padding-top:40px;
+}
+.section-requirements-text-number-item
+{
+	color:white;
+	background-color:  #2a6b16;
+	width: 19px;
+	text-align: center;
+	border-radius:51px;
+	padding:10px 10px;
+	border-color: blue;
+	border: 2px solid #51bf30;
+}
+.section-requirements-text-number
+{
+padding-bottom:11px;
+}
+.section-requirements
+{
+	padding-bottom:50px;
+}

@@ -1,0 +1,92 @@
+ .section-registration
+	{
+ 	color:white;
+	background: url("../img/background/bgmin.jpg") no-repeat center top / cover ;
+	background-blend-mode: multiply;
+	width: 100%;
+	background-color: #2e3a44;
+	display: flex;
+	text-align: center;
+box-sizing:border-box;
+
+	}
+	.form-registration-group
+	{
+		display:flex;
+		 flex-direction: column;
+	}
+	.registration-input, .form-registration-group
+	{
+		width: 300px;
+	}
+	.form-registration-group-item{
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.file-registration-item
+{
+align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+ .registration-label
+ {
+ 	text-align: left;
+ 	padding-top:20px;
+    margin-bottom: 10px;
+ 
+ }
+ .registration-label-2
+ {
+margin-bottom:30px;
+ }
+ 
+ .registration-input
+ {
+ 	font-size: 20px;
+ 	border-radius: 7px;
+ 	padding: 15px;
+ }
+  .registration-h2
+  {
+  	padding:50px 0 30px 0;
+  	color: #329e00;
+  	font-size: 45px;
+  }
+  .section-registration-text
+  {
+  	color: #329e00;
+  }
+ .file-registration-item input[type=file]
+ {
+ 	 outline:0;opacity:0;pointer-events:none;user-select:none 
+ }
+ .title-button-registration
+ {
+ 	border: 2px solid green;
+ 	border-radius:50px;
+ 	padding: 12px;
+ }
+ .control-file-registration
+ {
+ 	padding-top:30px;
+ }
+.button-registration
+{
+	cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+  	padding:0 30px;
+    height: 50px;
+    border-radius: 55px;
+    background-color: #3fba1a;
+    font-weight: 700;
+    width: 300px;
+	height:60px;
+}
+.button-registration-item
+{
+  margin-bottom:40px;
+}
