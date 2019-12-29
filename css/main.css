@@ -198,7 +198,8 @@ li {
           transform: rotate(40deg); }
 
 .menu__logo {
-  width: 100px; }
+  width: 100px;
+  height: 112px; }
 
 .menu__logo__item {
   display: -webkit-box;
