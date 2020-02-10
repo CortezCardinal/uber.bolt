@@ -1,29 +1,22 @@
   //                    =====(POPUP-HEADER)=====
   document.getElementById('header-button').addEventListener('click',
     function(){
-        
         document.querySelector('.bg-modal').style.display = 'flex';
-        
         $("html,body").css("overflow-y","hidden");
  // $('.bg-modal').fadeIn();
+            });
 
-    });
   document.querySelector('.close-popup').addEventListener('click',
 function(){
- 
-document.querySelector('.bg-modal').style.display = 'none';
- $("html,body").css("overflow-y","visible");
-});
-     //                    =====(POPUP-HEADER)=====   
+        document.querySelector('.bg-modal').style.display = 'none';
+         $("html,body").css("overflow-y","visible");
+        });
+         //                    =====(POPUP-HEADER)=====   
         //                    =====(POPUP-Body)=====   
    document.getElementById('ordercall-button').addEventListener('click',
     function(){
-    
-        document.querySelector('.bg-modal2').style.display = 'flex';
-       
-       
+        document.querySelector('.bg-modal2').style.display = 'flex';  
  // $('.bg-modal').fadeIn();
-
     });
   document.querySelector('.close-popup2').addEventListener('click',
 function(){
@@ -129,4 +122,25 @@ document.querySelector('.bg-modal2').style.display = 'none';
 //bonus patch of light for button
 	$('.bonus-button').addClass('autoflash').append('<div class="flash lighting" ></div>');
 //bonus patch of light for button
- 
+ function ready ()
+ {
+    var inputs = document.querySelectorAll('.inputfile');
+    Array.prototype.forEach.call(inputs,function(input)
+     {
+        var label = input.previousElementSibling,
+        labelVal = label.innerHTML;
+
+        input.addEventListener('change', function(e)
+        {
+          console.log(this.files);
+          var fileName = '';
+           
+            fileName = this.files[0].name;
+          if(fileName)
+            label.querySelector('span').innerHTML = fileName;
+          else
+            label.innerHTML = labelVal;
+        });
+     });
+ };
+ document.addEventListener("DOMContentLoaded", ready);

@@ -29,7 +29,7 @@ box-sizing:border-box;
 align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    margin-top: 30px;
 }
  .registration-label
  {
@@ -40,7 +40,7 @@ align-items: center;
  }
  .registration-label-2
  {
-margin-bottom:30px;
+  padding-bottom: 20px;
  }
  
  .registration-input
@@ -88,5 +88,9 @@ margin-bottom:30px;
 }
 .button-registration-item
 {
-  margin-bottom:40px;
+  margin:40px 0;
+}
+.title-button-registration
+{
+  cursor:pointer;
 }

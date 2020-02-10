@@ -229,13 +229,16 @@ li{
 	border-radius:4px;
 
 }
-.popup-input
+.popup-input,.popup-input2
 {
 	border:1px solid #8f8686;
 	font-size: 20px;
  	border-radius: 7px;
  	padding: 15px;
+ 	margin-top:10px;
+
 }
+ 
 .form-popup-item
 {
 	display:flex;
@@ -305,13 +308,7 @@ li{
 	border-radius:4px;
 
 }
-.popup-input2
-{
-	border:1px solid #8f8686;
-	font-size: 20px;
- 	border-radius: 7px;
- 	padding: 15px;
-}
+
 .form-popup-item2
 {
 	display:flex;
