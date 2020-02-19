@@ -11,8 +11,7 @@
 	//3-ой способ
  		$('.bg-modal').addClass('bg-modal-enter');
  	//3-ой способ
-            });
-  	 
+            }); 	 
 document.querySelector('.close-popup').addEventListener('click',
 function(){
 	//3-ый способ
@@ -26,21 +25,44 @@ function(){
         //  $("html,body").css("overflow-y","visible");
     //2-ой способ
         });
-         //                    =====(POPUP-HEADER)=====   
+//Если не попадаешь в зону popup окна - оно закрывается
+const modal2 = document.getElementById('bg-modal2');
+const modal = document.getElementById('bg-modal');
+window.onclick = function(e)
+{
+  if(e.target == modal)
+  {
+      $('.bg-modal').removeClass('bg-modal-enter');
+  }
+  if(e.target == modal2)
+  {
+      $('.bg-modal2').removeClass('bg-modal2-enter');
+  }
+}
+//Если не попадаешь в зону popup окна - оно закрывается
+        //                    =====(POPUP-HEADER)=====   
         //                    =====(POPUP-Body)=====   
    document.getElementById('ordercall-button').addEventListener('click',
     function(){
-        // document.querySelector('.bg-modal2').style.display = 'flex';  
- // $('.bg-modal').fadeIn();
- $('.bg-modal2').addClass('bg-modal2-enter');
+    //2-ой способ
+      // document.querySelector('.bg-modal2').style.display = 'flex';  
+      // $('.bg-modal').fadeIn();
+    //2-ой способ
+    //3-ой способ
+      $('.bg-modal2').addClass('bg-modal2-enter');
+    //3-ой способ
     });
   document.querySelector('.close-popup2').addEventListener('click',
 function(){
-	$('.bg-modal2').removeClass('bg-modal2-enter');
-    
-// document.querySelector('.bg-modal2').style.display = 'none';
-//  $("html,body").css("overflow-y","visible");
+    //3-ой способ
+  	 $('.bg-modal2').removeClass('bg-modal2-enter');
+    //3-ой способ
+  //2-ой способ
+    // document.querySelector('.bg-modal2').style.display = 'none';
+    //  $("html,body").css("overflow-y","visible");
+  //2-ой способ
 });
+ 
  //                      =====(POPUP-Body)===== 
  
   $(window).scroll(function(){

@@ -273,7 +273,8 @@ li {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s linear; }
+  transition: 0.3s linear;
+  z-index: 100; }
 
 .bg-modal2 {
   width: 100%;
@@ -288,7 +289,8 @@ li {
   top: 0;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s linear; }
+  transition: 0.3s linear;
+  z-index: 100; }
 
 .bg-modal-enter {
   display: flex;

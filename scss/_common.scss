@@ -340,7 +340,8 @@ li{
 	position: fixed;
 	visibility: hidden;
 	opacity: 0;
-	transition: 0.3s linear;	
+	transition: 0.3s linear;
+	z-index: 100;	
 }
 .bg-modal2
 {
@@ -357,6 +358,7 @@ li{
 	visibility: hidden;
 	opacity: 0;
 	transition: 0.3s linear;
+	z-index: 100;
 }
 .bg-modal-enter
 {
