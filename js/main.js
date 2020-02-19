@@ -1,28 +1,45 @@
   //                    =====(POPUP-HEADER)=====
   document.getElementById('header-button').addEventListener('click',
     function(){
-        document.querySelector('.bg-modal').style.display = 'flex';
-        $("html,body").css("overflow-y","hidden");
- // $('.bg-modal').fadeIn();
+    //2-ой способ
+		// document.querySelector('.bg-modal').style.display = 'flex';
+		// $("html,body").css("overflow-y","hidden");
+    //2-ой способ
+	//1-ый способ
+		// $('.bg-modal').fadeIn();
+	//1-ый способ
+	//3-ой способ
+ 		$('.bg-modal').addClass('bg-modal-enter');
+ 	//3-ой способ
             });
-
-  document.querySelector('.close-popup').addEventListener('click',
+  	 
+document.querySelector('.close-popup').addEventListener('click',
 function(){
-        document.querySelector('.bg-modal').style.display = 'none';
-         $("html,body").css("overflow-y","visible");
+	//3-ый способ
+	  		$('.bg-modal').removeClass('bg-modal-enter');
+	//3-ый способ
+  //1-ый способ
+ 		// $('.bg-modal').fadeOut();
+ 	//1-ый способ
+  	//2-ой способ
+        // document.querySelector('.bg-modal').style.display = 'none';
+        //  $("html,body").css("overflow-y","visible");
+    //2-ой способ
         });
          //                    =====(POPUP-HEADER)=====   
         //                    =====(POPUP-Body)=====   
    document.getElementById('ordercall-button').addEventListener('click',
     function(){
-        document.querySelector('.bg-modal2').style.display = 'flex';  
+        // document.querySelector('.bg-modal2').style.display = 'flex';  
  // $('.bg-modal').fadeIn();
+ $('.bg-modal2').addClass('bg-modal2-enter');
     });
   document.querySelector('.close-popup2').addEventListener('click',
 function(){
+	$('.bg-modal2').removeClass('bg-modal2-enter');
     
-document.querySelector('.bg-modal2').style.display = 'none';
- $("html,body").css("overflow-y","visible");
+// document.querySelector('.bg-modal2').style.display = 'none';
+//  $("html,body").css("overflow-y","visible");
 });
  //                      =====(POPUP-Body)===== 
  
