@@ -20,6 +20,10 @@ h2,h1,h4,h3,p
 	padding:0;
 	margin: 0;
 }
+a
+{
+	text-decoration:none;
+}
 .navBurger {
 	z-index: 99;
     position: fixed;
@@ -208,14 +212,14 @@ li{
 .modal-content
 {
 	width: 360px;
-	height:550px;
+	height: 616px;
 	background-color:white;
 	border-radius:4px;
 }
 .modal-popup-img-item
 {
 	width: 360px;
-	height:240px;
+	height: 216px;
 	border-radius:4px;
 
 }
@@ -224,8 +228,11 @@ li{
 	border:1px solid #8f8686;
 	font-size: 20px;
  	border-radius: 7px;
- 	padding: 15px;
- 	margin-top:10px;
+ 	padding: 5px;
+ 	// margin-top:10px;
+ 	height: 42px;
+
+
 
 }
  
@@ -233,6 +240,9 @@ li{
 {
 	display:flex;
 	justify-content: center;
+	flex-direction: column;
+    align-items: center;
+    
 }
 .popup-button
 {
@@ -270,7 +280,7 @@ li{
 .modal-content2
 {
 	width: 360px;
-	height:550px;
+	height: 625px;
 	background-color:white;
 	border-radius:4px;
 }
@@ -286,6 +296,16 @@ li{
 {
 	display:flex;
 	justify-content: center;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+     
+    justify-content: center;
+     
+    flex-direction: column;
+    
+    align-items: center;
 }
 .popup-button2
 {
@@ -327,7 +347,7 @@ li{
 	cursor:pointer;
 }
  .bg-modal
- {
+ { 
 	width: 100%;
 	height:100%;
 	background-color: rgba(10, 10, 10, 0.7);
@@ -374,4 +394,126 @@ li{
 	visibility: visible;
   	opacity: 1;  
 }
+.popup-error
+{
+	font-size:13px;
+	color: #c42525;
+	margin:5px 0;
+}
+.popup-success-input
+{
+	border:2px solid #65f06e;
+	// margin:10px 0;
+	 
+}
+ .success-popup
+ { 
+	width: 100%;
+	height:100%;
+	background-color: rgba(10, 10, 10, 0.7);
+	position: absolute;
+	top: 0;
+	z-index:80;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s linear;
+	z-index: 100;	
+}
+.success-enter
+{
+	display:flex;
+	visibility: visible;
+  	opacity: 1;
+}
+.success-body
+{
+	position: relative;
+	width: 360px;
+	height: 240px;
+	background-color: white;
+	border-radius:20px;
+}
+.success-text
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height:70%;
+}
+.close-success
+{
  
+	position: absolute;
+	top:0;
+	right: 15px;
+	font-size:42px;
+	transform:rotate(45deg);
+	cursor:pointer;
+}
+.success-button-item
+{
+	display:flex;
+	justify-content: center;
+}
+.success-button
+{
+	cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+  	padding:0 30px;
+    height: 50px;
+    border-radius: 55px;
+    background-color: #3fba1a;
+    font-weight: 700;
+    width: 60%;
+}
+.errorinput
+{
+	border:2px solid #ff6666;
+
+}
+.errorinput-mail
+{
+	border:2px solid #ff6666;
+
+}
+.form-popup-group
+{
+	display:flex;
+	flex-direction: column;
+}
+.popup-label
+{
+	padding:4px;
+	font-size: 13px;
+	font-weight:bold;
+	margin: 0 0 0 1px;
+}
+.ourcompany-button , .advantages-button ,
+ .payments-button-2 ,   
+ .tobecomethedriver-button
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-label2
+{
+	padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 0 1px;
+}
+.form-popup-group2
+{
+    display: flex;
+    flex-direction: column;
+}
+.form-popup-body
+{
+	height: 243px;
+}

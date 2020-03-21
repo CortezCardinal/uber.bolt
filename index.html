@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Uber Legal partner</title>
+	<title>Uber Legal Partner</title>
+	<meta name="description" content="Uber Legal Partner - работа водителем в Польше.Мы регистрируем водителей даже без посещения нашего офиса. Начать работу можно сразу.В Uber Legal Partner работают как мужчины, так и женщины, как опытный водитель, так и новичок с минимальным стажем вождения от одного года." />
+<!-- 	<meta property="og:type"            content="website" /> 
+	<meta property="og:url"             content="index.php" />
+	<meta property="og:title"           content="Uber Legal partner" />  
+	<meta property="og:description"    content="Uber Legal partner, работа в Польше, работа водителем в Польше" /> -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
@@ -11,83 +16,91 @@
 	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 <body id="body" class="body">
+	<div class="success-popup" id="success-popup">
+ 	<div class="success-body">
+ 		<div class="close-success">+</div>
+ 		<div class="success-text">
+ 		  <h3 class="popup-h3">Cпасибо за заявку!</h3>
+ 		</div>
+ 		<div class="success-button-item">
+ 			<button  class="success-button" type="submit" name="success-submit"  id="submit-success">Ок</button> 
+ 		</div>
+ 	</div>
+ </div>
 	<div id="bg-modal" class="bg-modal">
-
 		<div  class="modal-content">
 			<div class="close-popup">+</div>
 			<div class="modal-popup-img"> 
 				<img class="modal-popup-img-item" src="img/popup.png" alt="popup">
 			</div>
-			<form id="header-form"   method="post">
-				<div class="form-popup-body"> 
-	    	<div class="form-popup-item"> 
-		          <div class="form-popup-group">
-		            <label class="popup-label"   for="popup-name "></label>
-		            <input id="popup-name popup-input" placeholder="Name" class="popup-input" name="popup-name" type="text" required>
-	          	</div>
-			</div>
-			<div class="form-popup-item"> 
-		          <div class="form-popup-group">
-		            <label class="popup-label"   for="popup-email "></label>
-		            <input id="popup-email popup-input" placeholder="Email" class="popup-input" name="popup-emal" type="email" required>
-	          	</div>
-			</div>
-			<div class="form-popup-item"> 
-		          <div class="form-popup-group">
-		            <label class="popup-label"   for="popup-tel "></label>
-		            <input id="popup-tel popup-input" placeholder="Phone" class="popup-input" name="popup-tel" type="tel" required>
-	          	</div>
-			</div>
-			</div>
-		 <div class="header-form-item">
-          <button  class="popup-button" type="submit" form="header-form" id="submit-popup">Отправить сообщение</button> 
-            </div>
+			<form id="header-form"   method="POST">
+				<div class="form-popup-body"> 					 
+			    	<div class="form-popup-item">
+				        <div class="form-popup-group">
+					        <label class="popup-label"   for="popupname">Имя :</label>
+					        <input id="popupname" placeholder="Name" class="popup-input popup-input-name" name="popupname" type="text" required>
+			          	</div>  
+			          	 <span id="errorname" class="error popup-error"></span>
+					</div>
+					<div class="form-popup-item"> 
+				          <div class="form-popup-group">
+				            <label class="popup-label"   for="popupemail">Почта :</label>
+				            <input id="popupemail" placeholder="Email" class="popup-input popup-input-email" name="popupemail" type="email" required>
+			          	</div> <span id="errormail"	 class="popup-error"></span>
+					</div>
+					<div class="form-popup-item"> 
+				          <div class="form-popup-group">
+				            <label class="popup-label"   for="popuptel">Телефон :</label>
+				            <input id="popuptel" placeholder="Phone" class="popup-input popup-input-phone" name="popuptel" type="tel" required>
+			          	</div> <span id="errorphone" class="popup-error">  </span>
+					</div>
+				</div>
+				<div class="header-form-item">
+		        <button  class="popup-button" type="submit" name="popupsubmit" form="header-form" id="submit-popup">Отправить сообщение</button> 
+		        </div>
             </form>
 		</div>	
-		</div>
-</div>
-	<header id="home"  class="header">
-		<a class="btn__up">
-			<img src="img/uparrow2.png" alt="arrow">
-		</a>
-		 
-		<div id="pay" class="container header__ontainer">
-		<div class="clearfix"> 
-			<div class="logo-items"> 
-				 
-			</div>
-
-		 <nav class="menu  ">
-
-			<!-- 	<a href="" class="menu__btn">
-					<span></span>
-				</a> --><div class="navBurger" role="navigation" id="navToggle"></div> 
-<div class="header__menu">
-	<div class="menu__logo__item"> 
-<img class="menu__logo" src="img/logo9.png" alt="logo"> 
-</div>
-				<div class="menu__list">
-					<a href="#home" class="menu__link">Главная</a>
-					<a href="#services" class="menu__link">О компании</a>
-					<a href="#portfolio" class="menu__link">Бонусная система</a> 
-					<a href="#about" class="menu__link">Стать водителем</a>
-					<a href="#contact" class="menu__link">Контакты</a>
-				</div>
-				</div>
-			</nav>
-		</div>
-		<div class="header-info">
-			<div class="header-title">
-				<img class="header-logo" src="img/logo9.png" alt="">
-				<h2 class="header-h2">Стать водителем Uber в Польше</h2>
-				<h3 class="header-h3">Еженедельные выплаты - это стало возможным вместе с нами !</h3>
-			<button id="header-button" class="header-button">Мгновенная консультация</button>
-			 </div>  
-		</div>
-	</div> </div>
-	</header>
+	</div>
  
-  <section class="section-advantages">
+ <header id="home"  class="header">
+			<a class="btn__up">
+				<img src="img/uparrow2.png" alt="arrow">
+			</a> 
+				<div id="pay" class="container header__ontainer">
+				<div class="clearfix"> 
+					<div class="logo-items"> 	 
+					</div>
+					<nav class="menu  ">
+								<!-- 	<a href="" class="menu__btn">
+										<span></span>
+					</a> -->
+						<div class="navBurger" role="navigation" id="navToggle"></div> 
+						<div class="header__menu">
+							<div class="menu__logo__item"> 
+							<img class="menu__logo" src="img/logo9.png" alt="logo"> 
+							</div>
+								<div class="menu__list">
+									<a href="#home" class="menu__link">Главная</a>
+									<a href="#services" class="menu__link">О компании</a>
+									<a href="#portfolio" class="menu__link">Бонусная система</a> 
+									<a href="#about" class="menu__link">Стать водителем</a>
+									<a href="#contact" class="menu__link">Контакты</a>
+								</div>
+						</div>
+					</nav>
+					</div>
+					<div class="header-info">
+						<div class="header-title">
+							<img class="header-logo" src="img/logo9.png" alt="">
+							<h2 class="header-h2">Стать водителем Uber в Польше</h2>
+							<h3 class="header-h3">Еженедельные выплаты - это стало возможным вместе с нами !</h3>
+						<button id="header-button" class="header-button">Мгновенная консультация</button>
+						 </div>  
+					</div>
+				</div>
+</header>
+ 
+<section class="section-advantages">
  	<div   class="container  container-section-advantages">
 	 	<div class="  container__advantages">
 	 		<div class="section-advantages-title"> 
@@ -127,11 +140,13 @@
 		</div>
 
 		</div>
-<div class="section-advantages-button"> 
-	<a href="#about2"> 	<button   class="advantages-button"> Стать водителем  </button></a>
+		<div class="section-advantages-button"> 
+			<a href="#about2" > 	
+				<div   class="advantages-button"> Стать водителем  </div>
+			</a>
 		</div>
  	</div>
- </section>
+</section>
 <section class="section-ourcompany">
  	<div   class="container  container-section-ourcompany">
  	<div class="section-ourcompany-title">
@@ -142,11 +157,11 @@
  	</div>
  	</div>
  	<div class="section-ourcompany-button"> 
- 	<a href="#ourcompany"> <button class="ourcompany-button">Присоединиться</button></a>
- </div>
+ 	<a href="#ourcompany"> <div class="ourcompany-button">Присоединиться</div></a>
+ 	</div>
  	 </div>
  </section>
- <section class="section-license">
+<section class="section-license">
  	<div   class="container    container-section-license">
  		<div class="section-license-title    ">	 
 
@@ -163,9 +178,8 @@
  	 	</div>
  	 	 <div class="line_bottopm"></div>
  	</div>
- </section>
- <section class="section-payments ">
- 	  
+</section>
+<section class="section-payments ">	  
  	<div class="container-section-payments-slider"> 
  	<div   class="container    container-section-payments   ">
  	<div class="section-payments-title">
@@ -190,14 +204,13 @@
  		<p class="payments-p">Оставьте заявку и наш менеджер свяжется с вами</p>
  		</div>
  		<div class=" section-payments-button-2"> 
- 		<a href="#pay">  <button class="payments-button-2">Оставить заявку на получения выплаты</button></a>
+ 		<a href="#pay">  <div class="payments-button-2">Оставить заявку на получения выплаты</div></a>
  	</div>
  	</div>
  	</div>
  	</div>
-
- </section>
- <section class="section-requirements">
+</section>
+<section class="section-requirements">
  		<div   class="container    container-section-requirements   ">
 	 		<div class="section-requirements-title">
 				<div class="section-requirements-paragraph"> 
@@ -249,8 +262,8 @@
 	 		 </div>
 	 	</div>
  		</div>
- </section>
-  <section class="section-bonus">
+</section>
+<section class="section-bonus">
   	<div   class="container    container-section-bonus   ">
   		<div class="section-bonus-title">
   			<div class="section-bonus-paragraph">
@@ -261,11 +274,11 @@
   			</div>
   		</div>
   		<div class=" section-bonus-button"> 
- 	<a href="#bonus"> 	<button class="bonus-button">Получить бонус</button></a>
+ 	<a href="#bonus"> 	<div class="bonus-button">Получить бонус</div></a>
  	</div>
   	</div>
-  </section>
-  <section class="section_bonussystem">
+</section>
+<section class="section_bonussystem">
   		<div   class="container    container-section-bonussystem  ">
   			<div class="section-bonussystem-title">
   			<div class="section-bonussystem-paragraph">
@@ -306,26 +319,26 @@
 					<div class="section-bonussystem-items-title">
 						<img class="section-bonussystem-img" src="img/phonescouple.png" alt="connection">
 						<h4 class="bonussystem-h4">Бонус PLUS</h4>
-						<p class="bonussystem-p"> <span class="bonussystem-p-space"> Пассивный Доход</span>
-За каждого приведённого друга/знакомого 10% еженедельно будете дополнительно получать на свой банковский счёт.</p>
+									<p class="bonussystem-p"> <span class="bonussystem-p-space"> Пассивный Доход</span>
+										За каждого приведённого друга/знакомого 10% еженедельно будете дополнительно получать на свой банковский счёт.
+									</p>
 					</div>
 				</div>
 				<div class="section-bonussystem-items">
 					<div class="section-bonussystem-items-title">
 						<img class="section-bonussystem-img" src="img/smartphone.png" alt="connection">
 						<h4 class="bonussystem-h4">Бонус LINE</h4>
-						<p class="bonussystem-p"> <span class="bonussystem-p-space">Не хочешь получать деньги со своих друзей ?</span>
-
-Как только Ваш приглашённый друг подключается к нам на партнёрку Uber либо BOLT и отрабатывает минимум две расчетных недели у нас, мы дарим Вам три бесплатных недели нашего партнёрства в качестве благодарности!</p>
+									<p class="bonussystem-p"> <span class="bonussystem-p-space">Не хочешь получать деньги со своих друзей ?</span>
+			Как только Ваш приглашённый друг подключается к нам на партнёрку Uber либо BOLT и отрабатывает минимум две расчетных недели у нас, мы дарим Вам три бесплатных недели нашего партнёрства в качестве благодарности!</p>
 					</div>
 				</div>
 				<div class="section-bonussystem-items">
 					<div class="section-bonussystem-items-title">
 						<img class="section-bonussystem-img" src="img/shield.png" alt="connection">
 						<h4 class="bonussystem-h4">Maximum XL</h4>
-						<p class="bonussystem-p"> <span class="bonussystem-p-space">Чем больше привёл , тем больше получил</span>
-
-Если Вы подключаете от 9 участников тогда получаете уже 23 злотых за участника, еженедельно!</p>
+								<p class="bonussystem-p"> <span class="bonussystem-p-space">	Чем больше привёл , тем больше получил</span>
+									Если Вы подключаете от 9 участников тогда получаете уже 23 злотых за участника, еженедельно!
+								</p>
 					</div>
 				</div>
   			</div>
@@ -344,7 +357,7 @@
  		  <div class="line_bottopm"></div>
  	 	</div>
   		</div>
-  </section>
+</section>
 <section class="section-tobecomethedriver">
   	<div   class="container    container-section-tobecomethedriver   ">
   		<div class="section-tobecomethedriver-title">
@@ -356,12 +369,12 @@
   			</div>
   		</div>
   		<div class=" section-tobecomethedriver-button"> 
- 		<a href="#driver">  <button class="tobecomethedriver-button">Стать водителем</button></a>
+ 		<a href="#driver">  <div class="tobecomethedriver-button">Стать водителем</div></a>
  	</div>
   	</div>
   </section>
-  <section class="section-registration">
-  		<div   class="container    container-section-registration  ">
+ <section class="section-registration">
+  	<div   class="container    container-section-registration  ">
   			<div class="section-registration-title">
   			<div id="ourcompany" class="section-registration-paragraph">
   				<h2  id="about2" class="registration-h2">Регистрация водителя</h2>
@@ -374,29 +387,29 @@
     	<form id="ajax-registration-form"   method="post">
     		<div class="form-registration-group-item"> 
           <div class="form-registration-group">
-            <label class="registration-label"   for="registration-label-name ">Имя, фамилия:</label>
-            <input id="registration-label-name  registration-input" placeholder="Владимир Владимирович" class="registration-input" name="registration-name" type="text" required>
+            <label class="registration-label"   for="registration-label-name">Имя, фамилия:</label>
+            <input id="registration-label-name" placeholder="Владимир Владимирович" class="registration-input" name="registration-name" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-email">E-mail:</label>
-            <input id="registration-label-email registration-input" placeholder="example@gmail.com" class="registration-input" name="registration-email" type="email" required>
+            <input id="registration-label-email" placeholder="example@gmail.com" class="registration-input" name="registration-email" type="email" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-tel">Ваш телефон:</label>
-            <input id="registration-label-tel registration-input" placeholder="+48 *** *** ***" class="registration-input" name="registration-tel" type="tel" required>
+            <input id="registration-label-tel" placeholder="+48 *** *** ***" class="registration-input" name="registration-tel" type="tel" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-city">Город работы:</label>
-            <input id="registration-label-city registration-input" placeholder="Warszawa" class="registration-input" name="registration-city" type="text" required>
+            <input id="registration-label-city" placeholder="Warszawa" class="registration-input" name="registration-city" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-passport">Серия и номер паспорта:</label>
-            <input id="registration-label-passport registration-input" class="registration-input" name="registration-passport" type="text" required>
+            <input id="registration-label-passport" class="registration-input" name="registration-passport" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-driverlicense">Серия и номер водительского удостоверения:</label>
            
-            <input id="registration-label-driverlicense registration-input" class="registration-input" name="registration-driverlicense" type="text" required>
+            <input id="registration-label-driverlicense" class="registration-input" name="registration-driverlicense" type="text" required>
            
           </div>
            </div>
@@ -419,7 +432,7 @@
             <div class="file-registration-item"> 
             	<label class="registration-label-button" for="file-registration-passport">
             	<span class="title-button-registration">Добавить файл</span> </label>
-           		<input id="file-registration-passport"  class="inputfile" accept="image/jpeg, image/png" name="file-registration-passport" type="file" accept="image/jpeg, image/png" required>
+           		<input id="file-registration-passport"  class="inputfile" accept="image/jpeg, image/png" name="file-registration-passport" type="file"  required>
             </div>
           </div>
           <div class="control-file-registration">
@@ -428,7 +441,7 @@
             	<label class="registration-label-button" for="file-registration-profile"> 
             	<span class="title-button-registration">Добавить файл</span>
             	 </label>
-           		<input id="file-registration-profile" name="file-registration-profile"  class="inputfile" accept="image/jpeg, image/png"  type="file" accept="image/jpeg, image/png" required>
+           		<input id="file-registration-profile" name="file-registration-profile"  class="inputfile" accept="image/jpeg, image/png"  type="file"   required>
             </div>
           </div>
           <div class="control-file-registration">
@@ -437,7 +450,7 @@
             	<label class="registration-label-button" for="file-registration-psiho"> 
             	<span class="title-button-registration">Добавить файл</span>
             	 </label>
-           		<input id="file-registration-psiho" name="file-registration-profile"  class="inputfile" accept="image/jpeg, image/png"  type="file" accept="image/jpeg, image/png" required>
+           		<input id="file-registration-psiho" name="file-registration-profile"  class="inputfile" accept="image/jpeg, image/png"  type="file"   required>
             </div>
           </div>
          <div class="control-file-registration">
@@ -446,7 +459,7 @@
             	<label class="registration-label-button" for="file-registration-insurance"> 
             	<span class="title-button-registration">Добавить файл</span>
             </label>
-           		<input id="file-registration-insurance" name="file-registration-insurance"  class="inputfile" accept="image/jpeg, image/png"  type="file"  accept="image/jpeg, image/png" required>
+           		<input id="file-registration-insurance" name="file-registration-insurance"  class="inputfile"    type="file"  accept="image/jpeg, image/png" required>
             </div>
           </div>
            <div class="control-file-registration">
@@ -455,91 +468,86 @@
             	<label class="registration-label-button" for="file-registration-insurance2"> 
             	<span class="title-button-registration">Добавить файл</span>
             </label>
-           		<input id="file-registration-insurance2" name="file-registration-insurance"  class="inputfile" accept="image/jpeg, image/png"  type="file" accept="image/jpeg, image/png"  required>
+           		<input id="file-registration-insurance2" name="file-registration-insurance"  class="inputfile"    type="file" accept="image/jpeg, image/png"  required>
             </div>
           </div>
           <div class="form-registration-group-item">
            <div class="form-registration-group">
             <label class="registration-label" for="registration-label-brandofacar">Марка авто:</label>
-            <input id="registration-label-brandofacar registration-input" class="registration-input" name="registration-brandofacar" type="text" required>
+            <input id="registration-label-brandofacar" class="registration-input" name="registration-brandofacar" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-carmodel">Модель авто:</label>
-            <input id="registration-label-carmodel registration-input" class="registration-input" name="registration-carmodel" type="text" required>
+            <input id="registration-label-carmodel" class="registration-input" name="registration-carmodel" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-colorcar">Цвет авто:</label>
-            <input id="registration-label-colorcar registration-input" class="registration-input" name="registration-colorcar" type="text" required>
+            <input id="registration-label-colorcar" class="registration-input" name="registration-colorcar" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-registrationnumbercar">Регистрационный номер авто:</label>
-            <input id="registration-label-registrationnumbercar registration-input" class="registration-input" name="registration-registrationnumbercar" type="text" required>
+            <input id="registration-label-registrationnumbercar" class="registration-input" name="registration-registrationnumbercar" type="text" required>
           </div>
           <div class="form-registration-group">
             <label class="registration-label" for="registration-label-yearcar">Год выпуска авто:</label>
-            <input id="registration-label-yearcar registration-input" class="registration-input" name="registration-yearcar" type="text" required>
+            <input id="registration-label-yearcar" class="registration-input" name="registration-yearcar" type="text" required>
           </div>
       </div>
-      
-          <div class="control-file-registration form-registration-group-item">
-
-             
-             
-            <div class="file-registration-item"> 
-            	<label class="registration-label registration-label-2" for="file-registration-registrationcertificate">Фото техпаспорта
-
-            </label>
-            	<label class="registration-label-button" for="file-registration-registrationcertificate"> 
-            <span class="title-button-registration"  for="file-registration-registrationcertificate">Добавить файл</span>
-            </label>
-           		<input id="file-registration-registrationcertificate"  class="inputfile" accept="image/jpeg, image/png"  name="file-registration-registrationcertificate" type="file" accept="image/jpeg, image/png" required>
-            </div>
-          </div>
- 			<div class="button-registration-item"> 
-          <button class="button-registration" type="submit" id="submit-registration">Отправить сообщение</button></div>
-        </form>     
-    </div>
-</div>
-  </section>
-     <section class="section-popularquestions">
+     
+	        <div class="control-file-registration form-registration-group-item">
+	        	<label class="registration-label-button" for="file-registration-registrationcertificate"> Фото техпаспорта  </label>
+	            <div class="file-registration-item">
+	            	<label for="file-registration-registrationcertificate"> 
+		              <span class="title-button-registration">Добавить файл</span>
+		              </label>	            
+		           		<input id="file-registration-registrationcertificate"  class="inputfile" accept="image/jpeg, image/png"  name="file-registration-registrationcertificate" type="file"  required>     
+	           </div>
+	        </div>
+	 			<div class="button-registration-item"> 
+	          <button class="button-registration" type="submit" id="submit-registration">Отправить сообщение</button></div>
+        	</form>     
+    	</div>
+	</div>
+</section>
+<section class="section-popularquestions">
   		<div   class="container    container-section-popularquestions  ">
   			<div class="section-popularquestions-title">
-  			<div class="section-popularquestions-paragraph">
-  				<h2 class="popularquestions-h2">Популярные вопосы</h2>
-  			</div>
+	  			<div class="section-popularquestions-paragraph">
+	  				<h2 class="popularquestions-h2">Популярные вопосы</h2>
+	  			</div>
   			 	<div class="section-advantages-item"> 
-		<div class="section-advantages-items">
-			<img class="section-advantages-img" src="img/builder.png" alt="advantages">
-			<div class="section-advantages-items-title"> 
-			<h4 class="advantages-h4">КТО МОЖЕТ СТАТЬ ВОДИТЕЛЕМ УБЕР</h4>
-			<p class="advantages-p">Работают в системе Uber как мужчины, так и женщины, как опытный водитель, так и новичок с минимальным стажем вождения от одного года.</p>
+					<div class="section-advantages-items">
+						<img class="section-advantages-img" src="img/builder.png" alt="advantages">
+						<div class="section-advantages-items-title"> 
+						<h4 class="advantages-h4">КТО МОЖЕТ СТАТЬ ВОДИТЕЛЕМ УБЕР</h4>
+						<p class="advantages-p">Работают в системе Uber как мужчины, так и женщины, как опытный водитель, так и новичок с минимальным стажем вождения от одного года.</p>
+						</div>
+					</div>
+					<div class="section-advantages-items">
+						<img class="section-advantages-img" src="img/car.png" alt="advantages">
+						<div class="section-advantages-items-title"> 
+						<h4 class="advantages-h4">СКОЛЬКО СТОИТ ПОДКЛЮЧЕНИЕ В UBER/BOLT</h4>
+						<p class="advantages-p">Подключение 49zl , вам нужно только отправить нам минимальный список документов и ожидать, пока наши менеджеры сделают всю работу за вас.</p>
+						</div>
+					</div>
+					<div class="section-advantages-items">
+						<img class="section-advantages-img" src="img/moneyq.png" alt="advantages">
+						<div class="section-advantages-items-title"> 
+						<h4 class="advantages-h4">КАК РАССЧИТЫВАЕТСЯ СТОИМОСТЬ ПОЕЗДКИ</h4>
+						<p class="advantages-p">Все расчеты производятся автоматически в приложении Uber. Все заработанные деньги Вы также сможете отследить через приложение.</p>
+						</div>
+					</div>
+					<div class="section-advantages-items">
+						<img class="section-advantages-img" src="img/graphic.png" alt="advantages">
+						<div class="section-advantages-items-title"> 
+						<h4 class="advantages-h4">КАКОЙ ГРАФИК РАБОТЫ</h4>
+						<p class="advantages-p">Ваш график зависит только от Вашего желания работать. Вы работаете в удобное Вам время.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="section-advantages-items">
-			<img class="section-advantages-img" src="img/car.png" alt="advantages">
-			<div class="section-advantages-items-title"> 
-			<h4 class="advantages-h4">СКОЛЬКО СТОИТ ПОДКЛЮЧЕНИЕ В UBER/BOLT</h4>
-			<p class="advantages-p">Подключение 49zl , вам нужно только отправить нам минимальный список документов и ожидать, пока наши менеджеры сделают всю работу за вас.</p>
-			</div>
-		</div>
-		<div class="section-advantages-items">
-			<img class="section-advantages-img" src="img/moneyq.png" alt="advantages">
-			<div class="section-advantages-items-title"> 
-			<h4 class="advantages-h4">КАК РАССЧИТЫВАЕТСЯ СТОИМОСТЬ ПОЕЗДКИ</h4>
-			<p class="advantages-p">Все расчеты производятся автоматически в приложении Uber. Все заработанные деньги Вы также сможете отследить через приложение.</p>
-			</div>
-		</div>
-		<div class="section-advantages-items">
-			<img class="section-advantages-img" src="img/graphic.png" alt="advantages">
-			<div class="section-advantages-items-title"> 
-			<h4 class="advantages-h4">КАКОЙ ГРАФИК РАБОТЫ</h4>
-			<p class="advantages-p">Ваш график зависит только от Вашего желания работать. Вы работаете в удобное Вам время.</p>
-			</div>
-		</div>
-
-		</div>
   		</div>
-  	</section>
+</section>
   	<div id="bg-modal2" class="bg-modal2">
 
 		<div class="modal-content2">
@@ -551,31 +559,30 @@
 				<div class="form-popup-body"> 
 	    	<div class="form-popup-item2"> 
 		          <div class="form-popup-group2">
-		            <label class="popup-labe2l"   for="popup-name2 "></label>
-		            <input id="popup-name popup-input" placeholder="Name" class="popup-input2" name="popup-name" type="text" required>
-	          	</div>
+		            <label class="popup-label2"   for="popupname2">Имя:</label>
+		            <input id="popupname2" placeholder="Name" class="popup-input2 popup-input-name2" name="popupname2" type="text" required>
+	          	</div><span id="errorname2" class="error popup-error"></span>
 			</div>
 			<div class="form-popup-item2"> 
 		          <div class="form-popup-group2">
-		            <label class="popup-label2"   for="popup-email2 "></label>
-		            <input id="popup-email2 popup-input" placeholder="Email" class="popup-input2" name="popup-emal" type="email" required>
-	          	</div>
+		            <label class="popup-label2"   for="popupemail2">Email:</label>
+		            <input id="popupemail2" placeholder="Email" class="popup-input2 popup-input-email2" name="popupemail2" type="email" required>
+	          	</div><span id="errormail2" class="error popup-error"></span>
 			</div>
 			<div class="form-popup-item2"> 
 		          <div class="form-popup-group2">
-		            <label class="popup-label2"   for="popup-tel2 "></label>
-		            <input id="popup-tel2 popup-input" placeholder="Phone" class="popup-input2" name="popup-tel" type="tel" required>
-	          	</div>
+		            <label class="popup-label2"   for="popuptel2">Phone:</label>
+		            <input id="popuptel2" placeholder="Phone" class="popup-input2 popup-input-phone2" name="popuptel2" type="tel" required>
+	          	</div><span id="errorphone2" class="error popup-error"></span>
 			</div>
 			</div>
 		 <div class="header-form-item2">
-          <button  class="popup-button2" type="submit" form="header-form2" id="submit-popup">Отправить сообщение</button> 
+          <button  class="popup-button2" type="submit" form="header-form2" id="submit-popup2">Отправить сообщение</button> 
             </div>
             </form>
 		</div>	
-		</div>
-  	  <section class="section-ordercall">
-
+</div>
+<section class="section-ordercall">
   	<div   class="container    container-section-tobecomethedriver   ">
   		<div class="section-tobecomethedriver-title">
   			<div class="section-tobecomethedriver-paragraph">
@@ -585,73 +592,70 @@
   				<span class="tobecomethedriver-h2-color">наш менеджер свяжется с Вами в течение 5 минут</span> 
   			</div>
   		</div>
-
   		<div class=" section-ordercall-button"> 
- 		<button id="ordercall-button" class="ordercall-button">Заказать звонок</button>
- 		 
-</div>
+ 			<button id="ordercall-button" class="ordercall-button">Заказать звонок</button>
+ 		 </div>
  	</div>
-  	</div>
-  </section>
-  <footer>
-  	<div    class="container">
-  		<div id="contact" class="section-footer-paragraph"> 
-			<h2   class="section-footer-h2">
-				Контакты
-			</h2>
-	</div>
-	<div class="section-footer-item">
-		<div class="section-footeritems"> 
-		<h3 class="footer-h3"> Время работы:</h3>
-			<div class="section-footer-text"> 
-		<p class="footer-p">  Пн-Пт: 09:00-18:00
-		 </p>
-		<p class="footer-p">   
-		Cб-Вс: Выходной</p>
+  	 
+</section>
+<footer>
+		<div class="container">
+		  	<div id="contact" class="section-footer-paragraph"> 
+					<h2   class="section-footer-h2">
+						Контакты
+					</h2>
+			</div>
+			<div class="section-footer-item">
+				<div class="section-footeritems"> 
+				<h3 class="footer-h3"> Время работы:</h3>
+					<div class="section-footer-text"> 
+				<p class="footer-p">  Пн-Пт: 09:00-18:00
+				 </p>
+				<p class="footer-p">   
+				Cб-Вс: Выходной</p>
+				</div>
+				</div>
+				<div class="section-footeritems"> 
+				<h3 class="footer-h3"> Обратная связь:</h3>
+		<div class="section-footer-text">
+				<p class="footer-p"> 
+					<a href="tel:+48530900707" class="footer__link">Сергей	+48 530 900 707</a>
+			   </p>
+			<p class="footer-p"> 				  
+			<a href="tel:+48798121213" class="footer__link">Ольга +48 798 12 12 13</a>
+			<p class="footer-p">
+			<a class="footer__link" href="mailto:Legalpartnerwarszawa@gmail.com">Legalpartnerwarszawa@gmail.com
+			 </a>
 		</div>
-		</div>
-		<div class="section-footeritems"> 
-		<h3 class="footer-h3"> Обратная связь:</h3>
-<div class="section-footer-text">
-		<p class="footer-p"> 
-	<a href="tel:+48530900707" class="footer__link">	Сергей	+48 530 900 707  </a>
-   </p>
-<p class="footer-p"> 
-		  
-<a href="tel:+48798121213" class="footer__link">Ольга +48 798 12 12 13  </p></a>
-<p class="footer-p">
-<a class="footer__link" href="mailto:Legalpartnerwarszawa@gmail.com">Legalpartnerwarszawa@gmail.com
-</p> </a>
-</div>
-		</div>
-		<div class="section-footeritems"> 
-		<h3 class="footer-h3"> Местоположение:</h3>
-<div class="section-footer-text">
-		<p class="footer-p"> 
-		Targowa 67, 03-729 Warszawa  
-   </p>
- 
-</div>
-		</div>
-	</div>
- 	 
- 	<div class="site__footer">
- 		<img class="footer-logo" src="img/logo9.png" alt="logo">
- 	 	<p>Uber Legal partner © 2019</p>  
- 	</div>
- </div>
+				</div>
+				<div class="section-footeritems"> 
+				<h3 class="footer-h3"> Местоположение:</h3>
+					<div class="section-footer-text">
+							<p class="footer-p"> 
+							Targowa 67, 03-729 Warszawa</p>
+					</div>
+				</div>
+			</div>
+		 	<div class="site__footer">
+		 		<img class="footer-logo" src="img/logo9.png" alt="logo">
+		 	 	<p>Uber Legal partner © 2019</p>  
+		 	</div>
+		 </div>
 </footer>
 	<!-- Vendor scripts -->
- <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
  <script src="https://kit.fontawesome.com/95167d8c2c.js" crossorigin="anonymous"></script>
  <script src="libs/owlcarousel/owl.carousel.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
  <!-- Vendor scripts -->
  <!-- User scripts -->
-  <script src="js/main.js"></script>
+  <script   src="js/main.js"></script>
+   
    <!-- User scripts -->
-   <script>
-    $('.container-section-payments-slider').slick();
+   <script  >
+$('.container-section-payments-slider').slick();
    </script>
+   <script src="js/validate.js"></script>
+   <script src="js/validate2.js"></script>
 </body>
 </html>

@@ -1,33 +1,42 @@
+ //                    =====(POPUP-succsess)=====  
+document.querySelector('.close-success').addEventListener('click',
+function(){
+  
+        $('.success-popup').removeClass('success-enter');
+  
+        });
+ document.querySelector('.success-button').addEventListener('click',
+function(){
+   
+        $('.success-popup').removeClass('success-enter');
+ 
+        });
+  //                    =====(POPUP-success)===== 
   //                    =====(POPUP-HEADER)=====
   document.getElementById('header-button').addEventListener('click',
     function(){
-    //2-ой способ
-		// document.querySelector('.bg-modal').style.display = 'flex';
-		// $("html,body").css("overflow-y","hidden");
-    //2-ой способ
-	//1-ый способ
-		// $('.bg-modal').fadeIn();
-	//1-ый способ
-	//3-ой способ
  		$('.bg-modal').addClass('bg-modal-enter');
- 	//3-ой способ
             }); 	 
 document.querySelector('.close-popup').addEventListener('click',
 function(){
-	//3-ый способ
 	  		$('.bg-modal').removeClass('bg-modal-enter');
-	//3-ый способ
-  //1-ый способ
- 		// $('.bg-modal').fadeOut();
- 	//1-ый способ
-  	//2-ой способ
-        // document.querySelector('.bg-modal').style.display = 'none';
-        //  $("html,body").css("overflow-y","visible");
-    //2-ой способ
-        });
+        //Name
+        $('#errorname').hide();
+        $('.popup-input-name').removeClass('errorinput');
+        //Name
+        //Mail
+        $('#errormail').hide();
+        $('.popup-input-email').removeClass('errorinput-mail');
+        });   
+        //Mail
+         //Phone
+         $('#errorphone').hide();
+        $('.popup-input-phone').removeClass('errorinput');
+          //Phone
 //Если не попадаешь в зону popup окна - оно закрывается
 const modal2 = document.getElementById('bg-modal2');
 const modal = document.getElementById('bg-modal');
+const success = document.getElementById('success-popup');
 window.onclick = function(e)
 {
   if(e.target == modal)
@@ -38,29 +47,25 @@ window.onclick = function(e)
   {
       $('.bg-modal2').removeClass('bg-modal2-enter');
   }
+  if(e.target == success)
+  {
+      $('.success-popup').removeClass('success-enter');
+  }
 }
 //Если не попадаешь в зону popup окна - оно закрывается
         //                    =====(POPUP-HEADER)=====   
         //                    =====(POPUP-Body)=====   
    document.getElementById('ordercall-button').addEventListener('click',
     function(){
-    //2-ой способ
-      // document.querySelector('.bg-modal2').style.display = 'flex';  
-      // $('.bg-modal').fadeIn();
-    //2-ой способ
-    //3-ой способ
+   
       $('.bg-modal2').addClass('bg-modal2-enter');
-    //3-ой способ
+   
     });
   document.querySelector('.close-popup2').addEventListener('click',
 function(){
-    //3-ой способ
+    
   	 $('.bg-modal2').removeClass('bg-modal2-enter');
-    //3-ой способ
-  //2-ой способ
-    // document.querySelector('.bg-modal2').style.display = 'none';
-    //  $("html,body").css("overflow-y","visible");
-  //2-ой способ
+    
 });
  
  //                      =====(POPUP-Body)===== 
@@ -107,9 +112,7 @@ function(){
     // this line ▼ prevents content scroll-behind
      
 });
-//     $(".menu__btn").click(function() {
-//     $('.menu__active').toggle();
-// });
+ 
 
     //  --(Scroll Top)--
     const buttonUP = $('.btn__up');
@@ -161,25 +164,26 @@ function(){
 //bonus patch of light for button
 	$('.bonus-button').addClass('autoflash').append('<div class="flash lighting" ></div>');
 //bonus patch of light for button
- function ready ()
- {
-    var inputs = document.querySelectorAll('.inputfile');
-    Array.prototype.forEach.call(inputs,function(input)
-     {
-        var label = input.previousElementSibling,
-        labelVal = label.innerHTML;
+   function ready ()
+   {
+      var inputs = document.querySelectorAll('.inputfile');
+      Array.prototype.forEach.call(inputs,function(input)
+       {
+          var label = input.previousElementSibling,
+          labelVal = label.innerHTML;
 
-        input.addEventListener('change', function(e)
-        {
-          console.log(this.files);
-          var fileName = '';
-           
-            fileName = this.files[0].name;
-          if(fileName)
-            label.querySelector('span').innerHTML = fileName;
-          else
-            label.innerHTML = labelVal;
-        });
-     });
- };
- document.addEventListener("DOMContentLoaded", ready);
+          input.addEventListener('change', function(e)
+          {
+            console.log(this.files);
+            var fileName = '';
+             
+              fileName = this.files[0].name;
+            if(fileName)
+              label.querySelector('span').innerHTML = fileName;
+            else
+              label.innerHTML = labelVal;
+          });
+       });
+     };
+   document.addEventListener("DOMContentLoaded", ready);
+ 

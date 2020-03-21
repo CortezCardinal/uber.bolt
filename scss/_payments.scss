@@ -94,12 +94,13 @@ padding-bottom: 20px;
  {
  	position: relative!important;
  	    color: green!important;
-right: 36px!important;
+          right: 20%!important;
+// right: 36px!important;
  }
  button.slick-next.slick-arrow
  {
   
- 	right: 59px!important;
+ 	right: 11% !important;
  }
   .slick-prev:before 
  {
@@ -110,7 +111,7 @@ left: -341px !important;
  button.slick-prev.slick-arrow
  {
  z-index: 3!important;
- left: 404px !important;
+  left: 11% !important;  
  }
  .slick-prev:before, .slick-next:before 
  {
@@ -118,12 +119,12 @@ left: -341px !important;
  }
  .slick-prev:before {
    
-    left: -291px !important;
+   left: -132%!important;
     
 }
 .slick-next:before {
    
-   right: 70px !important;
+   // right: 70px !important;
     
 }
  
