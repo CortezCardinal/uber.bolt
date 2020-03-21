@@ -1515,4 +1515,8 @@ footer {
   button.slick-prev.slick-arrow {
     z-index: 3 !important;
     left: 9% !important; } }
+@media (min-width: 370px) {
+  .header-form-item, .header-form-item2 {
+    padding-top: 62px; } }
+
 /*# sourceMappingURL=main.css.map */
