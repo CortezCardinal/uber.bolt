@@ -596,9 +596,6 @@ li {
   text-align: center;
   box-sizing: border-box; }
 
-.header-logo {
-  width: 200px; }
-
 .header-title {
   padding: 125px 0; }
 
@@ -724,7 +721,7 @@ li {
   text-align: center; }
 
 .section-advantages-items-title {
-  padding-left: 30px; }
+  margin-left: 30px; }
 
 .advantages-h2 {
   font-size: 38px;
