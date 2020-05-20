@@ -94,14 +94,14 @@ function(){
     e.preventDefault;
         $(this).toggleClass('menu__btn_active');
     });
-//     $('a[href^="#"]').click(function () {
-//     //Сохраняем значение атрибута href в переменной:
-//     var target = $(this).attr('href');
-//      $('html, body').animate({  
-//     scrollTop: $(target).offset().top - 50//можно вычесть высоту меню
-//     }, 500);
-//   // return false;
-// });
+    $('a[href^="#"]').click(function () {
+    //Сохраняем значение атрибута href в переменной:
+    var target = $(this).attr('href');
+     $('html, body').animate({  
+    scrollTop: $(target).offset().top - 50//можно вычесть высоту меню
+    }, 500);
+  // return false;
+});
 //    //  --(Burger Menu)--
 //  //  --(Active Menu)--
  
