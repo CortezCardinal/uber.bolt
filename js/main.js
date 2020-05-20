@@ -70,7 +70,7 @@ function(){
  
  //                      =====(POPUP-Body)===== 
  
-//   $(window).scroll(function(){
+  $(window).scroll(function(){
 //   $('div[id], h2[id],header[id],p[id],button[id]').each(function(){
 //     var id = $(this).attr('id');
 //     if($(this).offset().top-500< $(window).scrollTop())
