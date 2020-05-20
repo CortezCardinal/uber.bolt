@@ -105,13 +105,13 @@ function(){
 //    //  --(Burger Menu)--
 //  //  --(Active Menu)--
  
-// //  --(Active Menu)--
-//  $("#navToggle").click(function() {
-//     $(this).toggleClass("active");
-//     $(".overlay").toggleClass("open");
-//     // this line ▼ prevents content scroll-behind
+//  --(Active Menu)--
+ $("#navToggle").click(function() {
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("open");
+    // this line ▼ prevents content scroll-behind
      
-// });
+});
  
 
     //  --(Scroll Top)--
