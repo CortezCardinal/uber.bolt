@@ -1,15 +1,63 @@
  //                    =====(POPUP-succsess)=====  
+ class RemoveSuccess {
+    remove() {
+    $('.popup-input-name').removeClass('popup-success-input');
+    $('.popup-input-email').removeClass('popup-success-input');
+    $('.popup-input-phone').removeClass('popup-success-input');
+        };   
+ };
+  class RemoveSuccess2 {
+    remove2() {
+    $('.popup-input-name2').removeClass('popup-success-input');
+    $('.popup-input-email2').removeClass('popup-success-input');
+    $('.popup-input-phone2').removeClass('popup-success-input');
+        };   
+ };
+ class RemoveBodySuccess {
+    removebody() {
+    $('.inp-body-name').removeClass('popup-success-input');
+    $('.inp-body-mail').removeClass('popup-success-input');
+    $('.inp-body-phone').removeClass('popup-success-input');
+    $('.inp-body-city').removeClass('popup-success-input');
+    $('.inp-body-passport').removeClass('popup-success-input');
+    $('.inp-body-driverlicense').removeClass('popup-success-input');
+    $(".title-button-registration1").addClass('title-button-registration');
+    $('.title-button-registration1').removeClass('success-input-file');
+    $(".title-button-registration2").addClass('title-button-registration');
+    $('.title-button-registration2').removeClass('success-input-file');
+    $(".title-button-registration3").addClass('title-button-registration');
+    $('.title-button-registration3').removeClass('success-input-file');
+    $(".title-button-registration4").addClass('title-button-registration');
+    $('.title-button-registration4').removeClass('success-input-file');
+    $(".title-button-registration5").addClass('title-button-registration');
+    $('.title-button-registration5').removeClass('success-input-file');
+    $(".title-button-registration6").addClass('title-button-registration');
+    $('.title-button-registration6').removeClass('success-input-file');
+    $(".title-button-registration7").addClass('title-button-registration');
+    $('.title-button-registration7').removeClass('success-input-file');
+    $('.inp-body-brandofacar').removeClass('popup-success-input');
+    $('.inp-body-carmodel').removeClass('popup-success-input');
+    $('.inp-body-colorcar').removeClass('popup-success-input');
+    $('.inp-body-registrationnumbercar').removeClass('popup-success-input');
+    $('.inp-body-yearcar').removeClass('popup-success-input');
+    $(".title-button-registration8").addClass('title-button-registration');
+    $('.title-button-registration8').removeClass('success-input-file');
+
+        };   
+ };
 document.querySelector('.close-success').addEventListener('click',
 function(){
-  
-        $('.success-popup').removeClass('success-enter');
-  
+          $('.success-popup').removeClass('success-enter');
+            new RemoveSuccess().remove();
+            new RemoveSuccess2().remove2();
+            new RemoveBodySuccess().removebody();
         });
  document.querySelector('.success-button').addEventListener('click',
 function(){
-   
-        $('.success-popup').removeClass('success-enter');
- 
+          $('.success-popup').removeClass('success-enter');
+            new RemoveSuccess().remove();
+            new RemoveSuccess2().remove2();
+            new RemoveBodySuccess().removebody();
         });
   //                    =====(POPUP-success)===== 
   //                    =====(POPUP-HEADER)=====
@@ -50,6 +98,9 @@ window.onclick = function(e)
   if(e.target == success)
   {
       $('.success-popup').removeClass('success-enter');
+      new RemoveSuccess().remove();
+      new RemoveSuccess2().remove2();
+      new RemoveBodySuccess().removebody();
   }
 }
 //Если не попадаешь в зону popup окна - оно закрывается
@@ -102,8 +153,8 @@ function(){
     }, 500);
   // return false;
 });
-//    //  --(Burger Menu)--
-//  //  --(Active Menu)--
+   //  --(Burger Menu)--
+ //  --(Active Menu)--
  
 //  --(Active Menu)--
  $("#navToggle").click(function() {
@@ -164,26 +215,5 @@ function(){
 //bonus patch of light for button
 	$('.bonus-button').addClass('autoflash').append('<div class="flash lighting" ></div>');
 //bonus patch of light for button
-   function ready ()
-   {
-      var inputs = document.querySelectorAll('.inputfile');
-      Array.prototype.forEach.call(inputs,function(input)
-       {
-          var label = input.previousElementSibling,
-          labelVal = label.innerHTML;
 
-          input.addEventListener('change', function(e)
-          {
-            console.log(this.files);
-            var fileName = '';
-             
-              fileName = this.files[0].name;
-            if(fileName)
-              label.querySelector('span').innerHTML = fileName;
-            else
-              label.innerHTML = labelVal;
-          });
-       });
-     };
-   document.addEventListener("DOMContentLoaded", ready);
  

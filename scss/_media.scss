@@ -9,7 +9,8 @@
 @media (max-width:450px)
 {
 	button.slick-prev.slick-arrow {
-    z-index: 3 !important;
+    // z-index: 3 !important;...............................
+      z-index: 3 ;
     // left: 86% !important;
 }
 button.slick-next.slick-arrow {
@@ -34,8 +35,10 @@ button.slick-next.slick-arrow {
  .slick-prev:before {
     // left: -71% !important;
     top: 5px;
-    border: 0 !important;
-    position: absolute!important;
+    // border: 0 !important;
+    // position: absolute!important;.....................
+     border: 0 ;
+    position: absolute;
 }
 }
 @media (max-width: 410px)
@@ -100,7 +103,8 @@ button.slick-next.slick-arrow {
 
 }
 button.slick-prev.slick-arrow {
-    z-index: 3 !important;
+    // z-index: 3 !important;..........
+     z-index: 3;
     // left: 12% !important;
 }
  
@@ -123,12 +127,15 @@ button.slick-prev.slick-arrow {
     button.slick-next.slick-arrow
  {
   
-    right: 9% !important;
+    // right: 9% !important;..............
+      right: 9%;
  }
 button.slick-prev.slick-arrow
  {
- z-index: 3!important;
-  left: 9% !important;  
+ // z-index: 3!important;
+ //  left: 9% !important;........................
+   z-index: 3;
+  left: 9% ;    
  }
 }
 @media (min-width:370px)
