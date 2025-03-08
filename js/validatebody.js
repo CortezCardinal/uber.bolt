@@ -14,7 +14,7 @@
 	              filelength = this.files[0].length;
 	            if(fileName)
 		            {
-		              label.querySelector('span').innerHTML = fileName;
+		              label.querySelector('span').innerHTML = '...'+fileName.slice(-7);
 		            }
 	           else 
 		           	{

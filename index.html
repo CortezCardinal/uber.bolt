@@ -36,19 +36,19 @@
 					        <label class="popup-label"   for="popupname">Имя :</label>
 					        <input id="popupname" placeholder="Name" class="popup-input popup-input-name" name="popupname" type="text" required>
 			          	</div>  
-			          	 <span id="errorname" class="error popup-error"></span>
+			          	 <span id="errorname" class="error__info popup-error"></span>
 					</div>
 					<div class="form-popup-item"> 
 				          <div class="form-popup-group">
 				            <label class="popup-label"   for="popupemail">Почта :</label>
 				            <input id="popupemail" placeholder="Email" class="popup-input popup-input-email" name="popupemail" type="email" required>
-			          	</div> <span id="errormail"	 class="popup-error"></span>
+			          	</div> <span id="errormail"	 class="error__info popup-error"></span>
 					</div>
 					<div class="form-popup-item"> 
 				          <div class="form-popup-group">
 				            <label class="popup-label"   for="popuptel">Телефон :</label>
 				            <input id="popuptel" placeholder="Phone" class="popup-input popup-input-phone" name="popuptel" type="tel" required>
-			          	</div> <span id="errorphone" class="popup-error">  </span>
+			          	</div> <span id="errorphone" class=" error__info popup-error">  </span>
 					</div>
 				</div>
 				<div class="header-form-item">
@@ -73,13 +73,17 @@
 							  <img class="menu__logo" src="img/main-logo.svg" alt="logo">  
 
 							</div>
-								<div class="menu__list">
+							<div class="menu__list">
 									<a href="#home" class="menu__link">Главная</a>
 									<a href="#services" class="menu__link">О компании</a>
 									<a href="#portfolio" class="menu__link">Бонусная система</a> 
 									<a href="#about" class="menu__link">Стать водителем</a>
 									<a href="#contact" class="menu__link">Контакты</a>
-								</div>
+							</div>
+							<div class="menu__contacts">
+								<a href="tel:+48530900707" class="menu__phone">+48 530 90 07 07</a>
+								<a href="tel:+48798121213" class="menu__phone">+48 798 12 12 13</a>
+							</div>
 						</div>
 					</nav>
 					</div>
@@ -643,7 +647,7 @@
   				<span class="tobecomethedriver-h2-color">наш менеджер свяжется с Вами в течение 5 минут</span> 
   			</div>
   		</div>
-  		<div class=" section-ordercall-button"> 
+  		<div id="contact" class=" section-ordercall-button"> 
  			<button id="ordercall-button" class="ordercall-button">Заказать звонок</button>
  		 </div>
  	</div>
@@ -651,7 +655,7 @@
 </section>
 <footer>
 		<div class="container">
-		  	<div id="contact" class="section-footer-paragraph"> 
+		  	<div class="section-footer-paragraph"> 
 					<h2   class="section-footer-h2">
 						Контакты
 					</h2>

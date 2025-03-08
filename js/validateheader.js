@@ -80,7 +80,7 @@ $(document).ready (function (){
 			}
 		else
 			{
-				$('#errorname').hide();
+				$('#errorname').text('');
 				$('.popup-input-name').removeClass('errorinput');
 				$('.popup-input-name').addClass('popup-success-input');
 			}
@@ -92,7 +92,7 @@ $(document).ready (function (){
 		}
 		else
 			{
-				$('#errormail').hide();
+				$('#errormail').text('');
 				$('.popup-input-email').removeClass('errorinput-mail');
 				$('.popup-input-email').addClass('popup-success-input');		 
 			}
@@ -103,7 +103,7 @@ $(document).ready (function (){
 			}
 		else
 			{
-				$('#errorphone').hide();
+				$('#errorphone').text('');
 				$('.popup-input-phone').removeClass('errorinput');
 				$('.popup-input-phone').addClass('popup-success-input');
 			}	

@@ -40,18 +40,10 @@ function   scriptLoadValidBody()
     script.type = "text/javascript";
     script.src = 'js/validatebody.js';
     
-    script.addEventListener('load', ()=> {  scriptLoadValidFooter();  });
+    script.addEventListener('load', ()=> {  });
     document.body.append(script);
 }
-function   scriptLoadValidFooter()
-{
-   const script = document.createElement('script');
-    script.type = "text/javascript";
-    script.src = 'js/validatefooter.js';
-    
-    script.addEventListener('load', ()=> {    });
-    document.body.append(script);
-}  
+  
    
 }
 
@@ -170,13 +162,13 @@ window.onclick = function(e)
    document.getElementById('ordercall-button').addEventListener('click',
     function(){
    
-      $('.bg-modal2').addClass('bg-modal2-enter');
+      $('.bg-modal').addClass('bg-modal-enter');
    
     });
   document.querySelector('.close-popup2').addEventListener('click',
 function(){
     
-  	 $('.bg-modal2').removeClass('bg-modal2-enter');
+  	 $('.bg-modal').removeClass('bg-modal-enter');
     
 });
  
@@ -230,7 +222,7 @@ function(){
 
     //  --(Scroll Top)--
     const buttonUP = $('.btn__up');
-    $('body').append('<button class="btn__up" />');
+    
     buttonUP.click(function(){
     $('body, html').animate({'scrollTop':0}, 1000);  
     });
